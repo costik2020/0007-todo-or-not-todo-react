@@ -38,7 +38,7 @@ function App(props) {
 					<div className="edit">edit</div>
 					<div className="remove">remove</div>
 				</li>
-				
+
 			</ul>
 		</div>
 

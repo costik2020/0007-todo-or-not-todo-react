@@ -40,8 +40,9 @@ ul li {
 
 ul li {
 	border: 0.1em solid black;
-	width: 30em;
+	width: 50em;
 	margin: 1em;
+	color: #ffffff;
 
 }
 
@@ -64,9 +65,26 @@ ul li {
 }
 
 /*Style the buttons*/
+.star{
+	background-image: url(icons/Star_fill-1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
 
+.edit{
+	background-image: url(icons/Edit_fill-1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
 
-
+.remove{
+	background-image: url(icons/Dell_fill-1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
 
 
 
