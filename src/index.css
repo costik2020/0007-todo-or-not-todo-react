@@ -31,6 +31,16 @@ form button {
 	box-sizing: border-box;
 	background-color: #4F359B;
 	border: none;
+
+}
+
+form button:hover {
+	background-color: #F9DC5C;
+}
+
+form button:active {
+	background-color: #F9B5AC;
+
 }
 
 /*Styles for the list of items*/
@@ -39,7 +49,7 @@ ul li {
 }
 
 ul li {
-	border: 0.1em solid black;
+	/*border: 0.1em solid black;*/
 	width: 50em;
 	margin: 1em;
 	color: #ffffff;
@@ -49,14 +59,15 @@ ul li {
 
 
 ul li div {
-	border: 0.1em solid black;
-	width: 10%;
-	height: 3em;
+	/*border: 0.1em solid black;*/
+	width: 4em;
+	height: 4em;
 	background-color: #417B5A;
 }
 
 ul li .item{
-	width: 70%;
+	width: 40em;
+	text-indent: 0.5em;
 }
 
 
@@ -70,6 +81,8 @@ ul li {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	border: 0.2em solid #4F359B;
+	box-sizing: border-box;
 }
 
 .edit{
@@ -77,6 +90,8 @@ ul li {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	border: 0.2em solid #4F359B;
+	box-sizing: border-box;
 }
 
 .remove{
@@ -84,6 +99,21 @@ ul li {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	border: 0.2em solid #4F359B;
+	border-left: none;
+	box-sizing: border-box;
+}
+
+.star:hover, .edit:hover, .remove:hover {
+	background-color: #F9DC5C;
+}
+
+.star:active, .edit:active, .remove:active {
+	background-color: #F9B5AC;
+	background-size: 2em;
+	border-top-width: 0.3em;
+	border-bottom-width: 0.3em;
+
 }
 
 

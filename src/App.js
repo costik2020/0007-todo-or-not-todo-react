@@ -12,32 +12,34 @@ function App(props) {
 		<div className="items-stack">
 			<ul>
 				<li>
-					<div className="star">star</div>
+					<div className="star"></div>
 					<div className="item">Item one</div>
-					<div className="edit">edit</div>
-					<div className="remove">remove</div>
+					<div className="edit"></div>
+					<div className="remove"></div>
 				</li>
 
 				<li>
-					<div className="star">star</div>
+					<div className="star"></div>
 					<div className="item">Item one</div>
-					<div className="edit">edit</div>
-					<div className="remove">remove</div>
+					<div className="edit"></div>
+					<div className="remove"></div>
 				</li>
 
 				<li>
-					<div className="star">star</div>
+					<div className="star"></div>
 					<div className="item">Item one</div>
-					<div className="edit">edit</div>
-					<div className="remove">remove</div>
+					<div className="edit"></div>
+					<div className="remove"></div>
 				</li>
 
 				<li>
-					<div className="star">star</div>
+					<div className="star"></div>
 					<div className="item">Item one</div>
-					<div className="edit">edit</div>
-					<div className="remove">remove</div>
+					<div className="edit"></div>
+					<div className="remove"></div>
 				</li>
+
+
 
 			</ul>
 		</div>
