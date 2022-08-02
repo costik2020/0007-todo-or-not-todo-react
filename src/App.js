@@ -1,4 +1,5 @@
 import React from 'react';
+import Todo from "./components/Todo.js";
 
 
 function App(props) {
@@ -11,35 +12,10 @@ function App(props) {
 		</form>
 		<div className="items-stack">
 			<ul>
-				<li>
-					<div className="star"></div>
-					<div className="item">Item one</div>
-					<div className="edit"></div>
-					<div className="remove"></div>
-				</li>
-
-				<li>
-					<div className="star"></div>
-					<div className="item">Item one</div>
-					<div className="edit"></div>
-					<div className="remove"></div>
-				</li>
-
-				<li>
-					<div className="star"></div>
-					<div className="item">Item one</div>
-					<div className="edit"></div>
-					<div className="remove"></div>
-				</li>
-
-				<li>
-					<div className="star"></div>
-					<div className="item">Item one</div>
-					<div className="edit"></div>
-					<div className="remove"></div>
-				</li>
-
-
+				<Todo name="item1" completed={false} />
+				<Todo name="item2" completed={true} />
+				<Todo name="item3" completed={false} />
+				<Todo name="item4" completed={false} />
 
 			</ul>
 		</div>

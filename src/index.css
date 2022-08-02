@@ -68,6 +68,7 @@ ul li div {
 ul li .item{
 	width: 40em;
 	text-indent: 0.5em;
+
 }
 
 
@@ -83,6 +84,11 @@ ul li {
 	background-size: contain;
 	border: 0.2em solid #4F359B;
 	box-sizing: border-box;
+}
+
+/*Hide the checkbox*/
+.star input{
+	ffffopacity: 0;
 }
 
 .edit{
