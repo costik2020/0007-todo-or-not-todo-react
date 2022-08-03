@@ -2,26 +2,55 @@ import React from 'react';
 import {useState} from "react";
 import Todo from "./components/Todo.js";
 import Form from "./components/Form.js";
+import {nanoid} from "nanoid";
+
 
 
 
 
 function App(props) {
 	const [tasks, setTasks]=useState(props.tasks);
+
 	function addTask(name){
-		const newTask = {id: "id", name: name, completed: false};
+		const newTask = {id: "todo-"+nanoid(), name: name, completed: false};
 		setTasks([...tasks, newTask]);
 	}
 
+	// This function will keep track if a task is checked or unchecked.
+	function toggleTaskCompleted(id){
+		console.log(tasks);
+		const updatedTask = tasks.map( (task)=>{
+			if (id===task.id){
+				return {...task, completed: !task.completed }
+			}
+			return task;
+		} )
+		setTasks(updatedTask);
+	}
+
+
+
+	// This function will delete a task
+	function deleteTask(id) {
+	  //console.log(id)
+	  //const remainingTasks = tasks.filter( (task)=>{id !== task.id} );
+	  const remainingTasks = tasks.filter( (task)=>{ return id !== task.id} );
+
+	  setTasks(remainingTasks);
+	}
+
+
 	//console.log("props.tasks",props.tasks);
-	const taskList = tasks.map((task) =>
+	const taskList = tasks.map((task) => (
 	  <Todo
 	  id={task.id}
 	  name={task.name}
 	  completed={task.completed}
 	  key={task.id}
+	  toggleTaskCompleted={toggleTaskCompleted}
+	  deleteTask={deleteTask}
 	  />
-);
+));
 //console.log("taskList=",taskList);
 
   return (
