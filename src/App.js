@@ -33,10 +33,20 @@ function App(props) {
 	// This function will delete a task
 	function deleteTask(id) {
 	  //console.log(id)
-	  //const remainingTasks = tasks.filter( (task)=>{id !== task.id} );
 	  const remainingTasks = tasks.filter( (task)=>{ return id !== task.id} );
 
 	  setTasks(remainingTasks);
+	}
+
+	// This function will edit a task
+	function editTask(id, newName){
+		const editedTaskList = tasks.map( (task)=>{
+			if (id === task.id){
+				return {...task, name: newName}
+			}
+			return task;
+		} );
+		setTasks(editedTaskList);
 	}
 
 
@@ -49,6 +59,7 @@ function App(props) {
 	  key={task.id}
 	  toggleTaskCompleted={toggleTaskCompleted}
 	  deleteTask={deleteTask}
+	  editTask={editTask}
 	  />
 ));
 //console.log("taskList=",taskList);
