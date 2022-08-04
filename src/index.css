@@ -36,11 +36,16 @@ form button {
 
 form button:hover {
 	background-color: #F9DC5C;
+	color: black;
 }
 
 form button:active {
 	background-color: #F9B5AC;
 
+}
+
+form .add-button {
+	color: #FFFFFF;
 }
 
 /*Styles for the list of items*/

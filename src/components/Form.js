@@ -28,8 +28,9 @@ function Form(props){
 			type="text"
 			value={name}
 			onChange={handleChange}
+			placeholder="Add item..."
 			></input>
-			<button>ADD</button>
+			<button className="add-button">ADD</button>
 		</form>
 	);
 }
