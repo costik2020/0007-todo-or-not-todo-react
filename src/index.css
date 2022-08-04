@@ -2,6 +2,7 @@
 /* General styles */
 body {
 	background-color: #CD3535;
+	font-family: sans-serif, serif, monospace;
 
 }
 
@@ -161,3 +162,25 @@ ul .star-is-true div  {
 }
 
 */
+
+/*Style when the item is eddited by the user*/
+ul .pen-edit-is-true div {
+	background-color: #FFFFFF;
+}
+
+ul .pen-edit-is-true div input {
+	border: none;
+	font-family: inherit;
+	font-size: 100%;
+	width : 34em;
+    padding: 0.2em;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+ul .pen-edit-is-true div input:focus {
+	outline:none;
+}
+
+
