@@ -149,8 +149,9 @@ ul li {
 /*Style when the item is checked*/
 
 ul .star-is-true div  {
-	background-color: #FFFFFF;
-	color: black;
+	background-color: #0CF574;
+	/*color: #1E1E1E;*/
+	color: rgba(30, 30, 30, 0.5);
 	text-decoration: line-through;
 }
 
