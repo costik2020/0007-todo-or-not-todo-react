@@ -28,9 +28,9 @@ function Todo(props){
 
 
 	const viewTemplate = (
-		<li id={props.id}>
+		<li className={"star-is-"+ props.completed} id={props.id}>
 		<div
-		className={"star star-is-"+ props.completed}
+		className="star"
 		onClick={()=>{
 			props.toggleTaskCompleted(props.id)
 		}}
@@ -53,9 +53,9 @@ function Todo(props){
 	);
 
 	const editTemplate = (
-		<li id={props.id}>
+		<li className={"star-is-"+ props.completed} id={props.id}>
 			<div
-			className={"star star-is-"+ props.completed}
+			className="star"
 			onClick={()=>{
 				props.toggleTaskCompleted(props.id)
 			}}
