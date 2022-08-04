@@ -29,19 +29,17 @@ function Todo(props){
 
 	const viewTemplate = (
 		<li id={props.id}>
-			<div className="star">
-				<input
-				type="checkbox"
-				defaultChecked={props.completed}
-				name='little-star'
-				id='star-btn'
-				onChange={()=>{
-					props.toggleTaskCompleted(props.id)
-				}}
-				/>
-				<label htmlFor='star-btn'></label>
-			</div>
+		<div
+		className={"star star-is-"+ props.completed}
+		onClick={()=>{
+			props.toggleTaskCompleted(props.id)
+		}}
+		>
+
+		</div>
+			<div className="item-above">
 			<div className="item">{props.name}</div>
+			</div>
 			<div
 			className="edit"
 			onClick={()=>{ setEditing(!isEditing);  }}
@@ -56,18 +54,15 @@ function Todo(props){
 
 	const editTemplate = (
 		<li id={props.id}>
-			<div className="star">
-				<input
-				type="checkbox"
-				defaultChecked={props.completed}
-				name='little-star'
-				id='star-btn'
-				onChange={()=>{
-					props.toggleTaskCompleted(props.id)
-				}}
-				/>
-				<label htmlFor='star-btn'></label>
+			<div
+			className={"star star-is-"+ props.completed}
+			onClick={()=>{
+				props.toggleTaskCompleted(props.id)
+			}}
+			>
+
 			</div>
+			<div className="item-above">
 			<div className="item">
 				<input
 				id={props.id}
@@ -75,6 +70,7 @@ function Todo(props){
 				value={newName}
 				onChange={handleChange}
 				/>
+			</div>
 			</div>
 			<div
 			className="edit"

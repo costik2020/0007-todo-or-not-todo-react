@@ -63,6 +63,8 @@ ul li {
 
 
 
+
+
 ul li div {
 	/*border: 0.1em solid black;*/
 	width: 4em;
@@ -73,6 +75,21 @@ ul li div {
 ul li .item{
 	width: 40em;
 	text-indent: 0.5em;
+	height: 1em;
+	/*border: 0.1em solid black;*/
+	/*Center the text inside an item of the list*/
+
+
+}
+
+/*Center the text inside an item of the list*/
+ul li .item-above {
+	width: 35em;
+	text-indent: 0.5em;
+	display: flex;
+	align-items: center;
+
+
 
 }
 
