@@ -14,11 +14,12 @@ body {
 
 /*The title*/
 .todo-app h1{
-	color: #FFFFFF;
+	color: #D7D6D6;
 }
 
 /*Add item form*/
 form input {
+	background-color: #D7D6D6;
 	width: 14em;
 	height: 2em;
 	margin: 1em;
@@ -46,7 +47,7 @@ form button:active {
 }
 
 form .add-button {
-	color: #FFFFFF;
+	color: #D7D6D6;
 }
 
 /*Styles for the list of items*/
@@ -165,10 +166,11 @@ ul .star-is-true div  {
 
 /*Style when the item is eddited by the user*/
 ul .pen-edit-is-true div {
-	background-color: #FFFFFF;
+	background-color: #D7D6D6;
 }
 
 ul .pen-edit-is-true div input {
+	background-color: #D7D6D6;
 	border: none;
 	font-family: inherit;
 	font-size: 100%;
