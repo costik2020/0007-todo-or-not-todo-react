@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# To do or not to do project
+
+**This is an TODO App**  
+
+I written this app in React and JSX and I also used a bit of CSS and JavaScript..  
+
+This is a simple and nice app that I initially designed it in Figma by making the UI/UX and after that I went ahead and wrote the source code.
+
+Here is a screenshot of my project:
+
+![todo_or_not_to_do_figma_design.png](img/todo_or_not_to_do_figma_design.png)
+
+
+
+
+---------------------------------------------------------------
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

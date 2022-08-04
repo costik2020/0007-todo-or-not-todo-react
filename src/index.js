@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // The tasks data
+
 const DATA = [
-  { id: "todo-0", name: "item1", completed: true },
-  { id: "todo-1", name: "item2", completed: false },
-  { id: "todo-2", name: "item3", completed: false },
-  { id: "todo-3", name: "item4", completed: false }
+  { id: "todo-0", name: "Go and learn how to code", completed: true },
+  { id: "todo-1", name: "Ride my Motorcycle", completed: false },
+  { id: "todo-2", name: "Go to the grocery store", completed: false },
+  { id: "todo-3", name: "Sleep and repeat", completed: false }
 ];
 
+
+//let DATA;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
