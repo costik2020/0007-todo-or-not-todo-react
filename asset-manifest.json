@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/0007-todo-or-not-todo-react/static/css/main.13e24148.css",
+    "main.js": "/0007-todo-or-not-todo-react/static/js/main.d7b5a99d.js",
+    "static/js/787.360268f8.chunk.js": "/0007-todo-or-not-todo-react/static/js/787.360268f8.chunk.js",
+    "index.html": "/0007-todo-or-not-todo-react/index.html",
+    "main.13e24148.css.map": "/0007-todo-or-not-todo-react/static/css/main.13e24148.css.map",
+    "main.d7b5a99d.js.map": "/0007-todo-or-not-todo-react/static/js/main.d7b5a99d.js.map",
+    "787.360268f8.chunk.js.map": "/0007-todo-or-not-todo-react/static/js/787.360268f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.13e24148.css",
+    "static/js/main.d7b5a99d.js"
+  ]
+}
