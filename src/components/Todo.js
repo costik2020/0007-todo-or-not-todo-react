@@ -17,15 +17,24 @@ function Todo(props){
 	}
 
 	function handleEdit(e) {
-	  //e.preventDefault();
-	  if (!(newName === "")){
-		  props.editTask(props.id, newName);
-	  }
+		//e.preventDefault();
+		if (!(newName === "")){
+			props.editTask(props.id, newName);
+		}
 
-	  //setNewName("");
-	  //setEditing(false);
+		//setNewName("");
+		//setEditing(false);
 	}
 
+	// Look for Enter being pressed 
+    function handleKeyPress(e) {
+        //console.log( "You pressed a key." );
+		//console.log("e.key", e.key);
+		if (e.key == "Enter"){
+			console.log("You pressed Enter");
+			setEditing(!isEditing); handleEdit() 
+		}
+    }	
 
 	const viewTemplate = (
 		<li
@@ -39,18 +48,23 @@ function Todo(props){
 		>
 
 		</div>
-			<div className="item-above">
-			<div className="item">{props.name}</div>
-			</div>
-			<div
-			className="edit"
-			onClick={()=>{ setEditing(!isEditing);  }}
-			>
-			</div>
-			<div
-			className="remove"
-			onClick={()=>{props.deleteTask(props.id)}}
-			></div>
+		<div
+		className="item-above"
+		onClick={()=>{ setEditing(!isEditing); handleEdit() }}
+		>
+		<div className="item">
+
+		{props.name}</div>
+		</div>
+		<div
+		className="edit"
+		onClick={()=>{ setEditing(!isEditing);  }}
+		>
+		</div>
+		<div
+		className="remove"
+		onClick={()=>{props.deleteTask(props.id)}}
+		></div>
 		</li>
 	);
 
@@ -58,34 +72,38 @@ function Todo(props){
 		<li
 		className={"star-is-"+ props.completed + " pen-edit-is-"+isEditing }
 		id={props.id}>
-			<div
-			className="star"
-			onClick={()=>{
-				props.toggleTaskCompleted(props.id)
-			}}
-			>
 
-			</div>
-			<div className="item-above">
-			<div className="item">
-				<input
-				id={props.id}
-				className="edit-item"
-				value={newName}
-				onChange={handleChange}
-				/>
-			</div>
-			</div>
-			<div
-			className="edit"
-			onClick={()=>{ setEditing(!isEditing); handleEdit() }}
+		<div
+		className="star"
+		onClick={()=>{
+			props.toggleTaskCompleted(props.id)
+		}}
+		>
 
-			>
-			</div>
-			<div
-			className="remove"
-			onClick={()=>{props.deleteTask(props.id)}}
-			></div>
+		</div>
+		<div className="item-above">
+		<div className="item">
+			<input
+			id={props.id}
+			className="edit-item"
+			value={newName}
+			onChange={handleChange}
+			onKeyPress={(e) => handleKeyPress(e)}	
+			/>
+		</div>
+		</div>
+
+
+		<div
+		className="edit"
+		onClick={()=>{ setEditing(!isEditing); handleEdit() }}
+
+		>
+		</div>
+		<div
+		className="remove"
+		onClick={()=>{props.deleteTask(props.id)}}
+		></div>
 		</li>
 	);
 
